@@ -3,14 +3,14 @@ import { NavLinks } from "../Constant";
 
 const NavBar = () => {
   return (
-    <header className="">
-      <nav>
+    <header className="p-10">
+      <nav className="flex justify-between items-center">
         <div>
           <img src="/images/logo.svg" alt="Logo" className="logo" />
         </div>
 
         <div>
-          <ul>
+          <ul className="flex justify-between items-center gap-4">
             {NavLinks.map((link) => (
               <li key={link.id}>
                 <a href="#">{link.title}</a>
