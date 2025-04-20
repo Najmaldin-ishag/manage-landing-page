@@ -7,7 +7,10 @@
   }
 
   body {
-    background-color: hsl(13, 100%, 96%);
+    background-color: hsl(0, 0%, 98%);
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: "Be Vietnam Pro", sans-serif;
   }
 }
 @layer components {
@@ -28,6 +31,9 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .section-padding {
+    @apply px-5;
+  }
 }
 
 @theme {
@@ -41,4 +47,8 @@
   --color-secondary-very-dark-blue: hsl(233, 12%, 13%);
   --color-secondary-very-pale-red: hsl(13, 100%, 96%);
   --color-secondary-very-light-gray: hsl(0, 0%, 98%);
+
+  /* Text-color */
+  --text-primary-dark-blue: hsl(228, 39%, 23%);
+  --text-secondary-very-dark-blue: hsl(233, 12%, 13%);
 }

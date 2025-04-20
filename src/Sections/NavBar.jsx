@@ -3,7 +3,7 @@ import { NavLinks } from "../Constant";
 
 const NavBar = () => {
   return (
-    <header className="p-10 container relative ">
+    <header className="mt-10 section-padding">
       <nav className="flex justify-between items-center">
         <div>
           <img src="/images/logo.svg" alt="Logo" className="logo" />
