@@ -3,7 +3,7 @@ import { NavLinks } from "../Constant";
 
 const NavBar = () => {
   return (
-    <header className="p-10">
+    <header className="p-10 container relative ">
       <nav className="flex justify-between items-center">
         <div>
           <img src="/images/logo.svg" alt="Logo" className="logo" />
@@ -19,7 +19,7 @@ const NavBar = () => {
           </ul>
         </div>
 
-        <Button>Get Started</Button>
+        <Button className="btn bg-primary-bright-red">Get Started</Button>
       </nav>
     </header>
   );

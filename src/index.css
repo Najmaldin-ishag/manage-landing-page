@@ -1,1 +1,44 @@
 @import "tailwindcss";
+
+@layer base {
+  html {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  body {
+    background-color: hsl(13, 100%, 96%);
+  }
+}
+@layer components {
+  .btn {
+    @apply rounded-full text-[1rem] font-semibold text-white py-3 px-6 inline-block shadow-xl;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply max-w-[1440px] mx-auto;
+  }
+  .bg-img::before {
+    content: "";
+    background-image: url("/images/bg-tablet-pattern.svg");
+    z-index: -1;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@theme {
+  /* Primary Colors */
+  --color-primary-bright-red: hsl(12, 88%, 59%);
+  --color-primary-dark-blue: hsl(228, 39%, 23%);
+
+  /* Secondary Colors */
+
+  --color-secondary-dark-grayish-blue: hsl(227, 12%, 61%);
+  --color-secondary-very-dark-blue: hsl(233, 12%, 13%);
+  --color-secondary-very-pale-red: hsl(13, 100%, 96%);
+  --color-secondary-very-light-gray: hsl(0, 0%, 98%);
+}
