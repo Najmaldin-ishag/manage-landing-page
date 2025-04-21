@@ -74,9 +74,33 @@ export const testimonials = [
   // },
 ];
 
-export const footerLinks = [
+export const footerLinks1 = [
   { id: 1, name: "Home", path: "/" },
   { id: 2, name: "Pricing", path: "/pricing" },
   { id: 3, name: "Products", path: "/products" },
-  { id: 4, name: "About Us", path: "/about" },
+  { id: 4, name: "About Us", path: "/about us" },
+];
+export const footerLinks2 = [
+  { id: 1, name: "Careers", path: "/" },
+  { id: 2, name: "Community", path: "/pricing" },
+  { id: 3, name: "Privacy Polices", path: "/products" },
+];
+
+export const FooterIcons = [
+  {
+    id: 1,
+    iconPath: "/images/icon-facebook.svg",
+  },
+  {
+    id: 1,
+    iconPath: "/images/icon-pinterest.svg",
+  },
+  {
+    id: 1,
+    iconPath: "/images/icon-youtube.svg",
+  },
+  {
+    id: 1,
+    iconPath: "/images/icon-twitter.svg",
+  },
 ];
