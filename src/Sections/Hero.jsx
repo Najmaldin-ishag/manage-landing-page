@@ -2,7 +2,7 @@ import Button from "../Components/Button";
 
 const Hero = () => {
   return (
-    <header className="section-padding">
+    <header className="section-padding container">
       <div className="grid grid-cols-2 mt-[6.5rem] ">
         {/* Header content */}
         <div>

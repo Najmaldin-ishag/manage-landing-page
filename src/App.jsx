@@ -1,3 +1,4 @@
+import Cta from "./Sections/Cta";
 import Features from "./Sections/Features";
 import Hero from "./Sections/Hero";
 import NavBar from "./Sections/NavBar";
@@ -11,6 +12,7 @@ const App = () => {
         <Hero />
         <Features />
         <Testimonials />
+        <Cta />
       </main>
     </>
   );

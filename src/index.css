@@ -8,8 +8,7 @@
 
   body {
     background-color: hsl(0, 0%, 98%);
-    max-width: 1440px;
-    margin: 0 auto;
+
     font-family: "Be Vietnam Pro", sans-serif;
   }
 }
@@ -21,7 +20,7 @@
 
 @layer utilities {
   .container {
-    @apply max-w-[1440px] mx-auto;
+    @apply max-w-[1440px] mx-auto my-0;
   }
   .bg-img::before {
     content: "";
@@ -35,7 +34,10 @@
     @apply px-10;
   }
   .card {
-    @apply bg-gray-100 py-0 px-10 mt-10;
+    @apply bg-gray-100 py-5 px-10 mt-10;
+  }
+  .section-cta {
+    @apply py-[2rem] px-4 bg-primary-bright-red mt-[3.5rem] mx-0 my-0;
   }
 }
 
