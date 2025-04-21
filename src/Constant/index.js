@@ -66,12 +66,12 @@ export const testimonials = [
     quote:
       "Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!",
   },
-  {
-    imgPath: "/images/avatar-shanai.png",
-    name: "Shanai Gough",
-    quote:
-      "Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.",
-  },
+  // {
+  //   imgPath: "/images/avatar-shanai.png",
+  //   name: "Shanai Gough",
+  //   quote:
+  //     "Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.",
+  // },
 ];
 
 export const footerLinks = [

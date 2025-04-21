@@ -34,6 +34,9 @@
   .section-padding {
     @apply px-10;
   }
+  .card {
+    @apply bg-gray-100 py-0 px-10 mt-10;
+  }
 }
 
 @theme {
