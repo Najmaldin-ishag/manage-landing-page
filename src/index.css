@@ -32,7 +32,7 @@
     background-size: cover;
   }
   .section-padding {
-    @apply px-5;
+    @apply px-10;
   }
 }
 

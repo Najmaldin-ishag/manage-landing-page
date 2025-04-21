@@ -47,7 +47,7 @@ export const features = [
   },
 ];
 
-const testimonials = [
+export const testimonials = [
   {
     imgPath: "/images/avatar-anisha.png",
     name: "Anisha Li",
