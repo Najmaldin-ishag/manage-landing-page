@@ -7,7 +7,7 @@ const Cta = () => {
         <p className="text-white text-3xl leading-3">
           Simplify how your team works today.
         </p>
-        <div className="flex justify-center">
+        <div className="flex justify-center items-center">
           <Button className="btn bg-white text-primary-bright-red mt-5 px-[4.5rem]">
             Get Started
           </Button>

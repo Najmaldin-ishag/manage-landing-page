@@ -2,7 +2,7 @@ import { features } from "../Constant";
 
 const Features = () => {
   return (
-    <section className="section-padding">
+    <section className="section-padding container mb-[4.5rem]">
       <div className="mt-[6.5rem]  grid grid-cols-2 gap-[6.5rem]">
         <div>
           <h2 className="text-primary-dark-blue text-5xl mb-8 font-[400]">

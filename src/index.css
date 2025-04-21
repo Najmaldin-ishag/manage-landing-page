@@ -37,7 +37,7 @@
     @apply bg-gray-100 py-5 px-10 mt-10;
   }
   .section-cta {
-    @apply py-[2rem] px-4 bg-primary-bright-red mt-[3.5rem] mx-0 my-0;
+    @apply py-[4rem] px-4 bg-primary-bright-red mt-[3.5rem] mx-0 my-0;
   }
 }
 

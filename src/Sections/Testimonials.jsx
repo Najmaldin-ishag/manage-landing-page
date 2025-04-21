@@ -3,7 +3,7 @@ import { testimonials } from "../Constant";
 
 const Testimonials = () => {
   return (
-    <section className="section-padding mt-[6.5rem]">
+    <section className="section-padding mt-[6.5rem]! container">
       <h3 className="text-center text-primary-dark-blue text-5xl mb-4 font-bold">
         What they’ve said
       </h3>
