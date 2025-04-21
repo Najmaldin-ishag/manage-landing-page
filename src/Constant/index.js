@@ -92,15 +92,19 @@ export const FooterIcons = [
     iconPath: "/images/icon-facebook.svg",
   },
   {
-    id: 1,
+    id: 2,
     iconPath: "/images/icon-pinterest.svg",
   },
   {
-    id: 1,
+    id: 3,
     iconPath: "/images/icon-youtube.svg",
   },
   {
-    id: 1,
+    id: 4,
     iconPath: "/images/icon-twitter.svg",
+  },
+  {
+    id: 5,
+    iconPath: "/images/icon-instagram.svg",
   },
 ];
