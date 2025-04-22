@@ -1,5 +1,7 @@
 import { FooterIcons, footerLinks1, footerLinks2 } from "../Constant";
 // const img = "/public/images/logo.svg";
+
+const date = new Date().getFullYear();
 const Footer = () => {
   return (
     <footer className="py-[5rem] px-[2.5rem] bg-primary-dark-blue">
@@ -55,8 +57,8 @@ const Footer = () => {
           </form>
 
           <p className="text-white text-sm mt-8">
-            copyright 2025 Designed by Front-end Mentor, Developed by Najmaldin
-            Ishag
+            copyright {date} Designed by Front-end Mentor, Developed by
+            Najmaldin Ishag
           </p>
         </div>
       </div>
