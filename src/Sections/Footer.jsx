@@ -12,7 +12,7 @@ const Footer = () => {
           </a>
           <div className="flex gap-4 mt-10">
             {FooterIcons.map((link) => (
-              <img src={link.iconPath} />
+              <img key={link.id} src={link.iconPath} />
             ))}
           </div>
         </div>
@@ -57,7 +57,7 @@ const Footer = () => {
           </form>
 
           <p className="text-white text-sm mt-8">
-            copyright {date} Designed by Front-end Mentor, Developed by
+            Copyright {date} Designed by Front-end Mentor, Developed by
             Najmaldin Ishag
           </p>
         </div>
