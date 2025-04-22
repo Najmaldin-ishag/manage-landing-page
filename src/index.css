@@ -8,7 +8,7 @@
 
   body {
     background-color: hsl(0, 0%, 98%);
-
+    /* overflow: hidden; */
     font-family: "Be Vietnam Pro", sans-serif;
   }
 }

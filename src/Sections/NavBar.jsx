@@ -6,14 +6,22 @@ const NavBar = () => {
     <header className="mt-[2.5rem]! section-padding container ">
       <nav className="flex justify-between items-center">
         <div>
-          <img src="/images/logo.svg" alt="Logo" className="logo" />
+          <a href="/">
+            <img
+              src="/images/logo.svg"
+              alt="Logo"
+              className="logo cursor-pointer"
+            />
+          </a>
         </div>
 
         <div>
           <ul className="flex justify-between items-center gap-4">
             {NavLinks.map((link) => (
               <li key={link.id}>
-                <a href="#">{link.title}</a>
+                <a className="cursor-pointer" href="#">
+                  {link.title}
+                </a>
               </li>
             ))}
           </ul>

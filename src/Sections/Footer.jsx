@@ -5,7 +5,9 @@ const Footer = () => {
     <footer className="py-[5rem] px-[2.5rem] bg-primary-dark-blue">
       <div className="grid grid-cols-4 gap-5 items-center justify-center">
         <div>
-          <img src="/images/logo.svg " className="mb-[2rem]" />
+          <a href="/">
+            <img src="/images/logo.svg" alt="Logo" className="mb-[2rem]" />
+          </a>
           <div className="flex gap-4 mt-10">
             {FooterIcons.map((link) => (
               <img src={link.iconPath} />
@@ -17,7 +19,9 @@ const Footer = () => {
           {footerLinks1.map((link) => (
             <ul key={link.id}>
               <li>
-                <a href="#">{link.name}</a>
+                <a className="cursor-pointer" href="#">
+                  {link.name}
+                </a>
               </li>
             </ul>
           ))}
@@ -27,7 +31,9 @@ const Footer = () => {
           {footerLinks2.map((link) => (
             <ul key={link.id}>
               <li>
-                <a href="#">{link.name}</a>
+                <a className="cursor-pointer" href="#">
+                  {link.name}
+                </a>
               </li>
             </ul>
           ))}
@@ -40,14 +46,17 @@ const Footer = () => {
               type="text"
               placeholder="update in your inbox"
             />
-            <button className="bg-primary-bright-red py-2 px-3 rounded-3xl ml-4 text-white shadow-2xl">
+            <button
+              type="submit"
+              className="bg-primary-bright-red py-2 px-3 rounded-3xl ml-4 cursor-pointer text-white shadow-2xl"
+            >
               Go
             </button>
           </form>
 
           <p className="text-white text-sm mt-8">
             copyright 2025 Designed by Front-end Mentor, Developed by Najmaldin
-            Ishag{" "}
+            Ishag
           </p>
         </div>
       </div>
