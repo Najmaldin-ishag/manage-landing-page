@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <header className="mt-[2.5rem]! section-padding container ">
       <nav className="flex justify-between items-center">
-        <div className="flex w-full justify-between ">
+        <div className="flex max-sm:w-full justify-between ">
           <a href="/">
             <img
               src="/images/logo.svg"
