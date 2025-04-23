@@ -18,7 +18,7 @@ const Hero = () => {
           </Button>
         </div>
         {/* Header img */}
-        <div className="max-sm:order-first">
+        <div className="max-sm:order-first max-sm:mb-4">
           <img src="/images/illustration-intro.svg" />
         </div>
       </div>
