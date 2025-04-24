@@ -35,7 +35,7 @@ const Testimonials = () => {
       </div>
 
       {/*  Testimonials on Mobile devices */}
-      <div className=" mt-[5.5rem]  ">
+      <div className=" mt-[5.5rem] lg:hidden md:hidden  ">
         {testimonials.map((item, index) => (
           <div
             key={item.name}
