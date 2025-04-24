@@ -19,7 +19,7 @@ const NavBar = () => {
   return (
     <header className="mt-[2.5rem]! section-padding container relative ">
       <nav className="flex justify-between items-center">
-        <div className="flex  justify-between ">
+        <div className="flex justify-between max-sm:flex max-sm:justify-between max-sm:min-w-full">
           <a href="/">
             <img
               src="/images/logo.svg"
@@ -29,10 +29,10 @@ const NavBar = () => {
           </a>
           {isOpen ? (
             <button onClick={toggleNavigation}>
-              <img src="/images/icon-close.svg" />
+              <img src="/images/icon-close.svg" className="ml-auto" />
             </button>
           ) : (
-            <button onClick={toggleNavigation} className="lg:hidden  ">
+            <button onClick={toggleNavigation} className="lg:hidden ">
               <img
                 src="/images/icon-hamburger.svg"
                 className="h-6 w-6  "
@@ -42,7 +42,8 @@ const NavBar = () => {
           )}
         </div>
 
-        <div>
+        {/* Desktop Nav */}
+        <div className="max-sm:hidden">
           <ul className="flex justify-between items-center gap-4">
             {NavLinks.map((link) => (
               <li key={link.id}>
@@ -54,6 +55,32 @@ const NavBar = () => {
           </ul>
         </div>
 
+        {/* Mobile Nav */}
+
+        {isOpen && (
+          <div
+            className={`${
+              isOpen
+                ? "flex flex-col min-w-[80vw] max-h-screen  px[5rem] py-[6rem] justify-center items-center bg-white shadow-xl absolute top-[12rem] left-1/2 -translate-x-1/2 -translate-y-1/2 "
+                : "lg:hidden"
+            }`}
+          >
+            <ul className="max-sm:flex max-sm:gap-8 max-sm:flex-col items-center justify-center">
+              {NavLinks.map((link) => (
+                <li key={link.id}>
+                  <a
+                    className="cursor-pointer max-sm:mb-50"
+                    href="#"
+                    onClick={handleClick}
+                  >
+                    {link.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         <Button className="btn max-sm:hidden bg-primary-bright-red">
           Get Started
         </Button>
@@ -63,9 +90,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-// className={`${
-//   isOpen
-//     ? "flex flex-col min-w-[80vw]  px[5rem] py-[4rem] justify-center items-center bg-white shadow-xl absolute top-[12rem] left-1/2 -translate-x-1/2 -translate-y-1/2 "
-//     : "lg:flex"
-// }`}
