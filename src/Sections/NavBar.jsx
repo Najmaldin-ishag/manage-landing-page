@@ -47,7 +47,10 @@ const NavBar = () => {
           <ul className="flex justify-between items-center gap-4">
             {NavLinks.map((link) => (
               <li key={link.id}>
-                <a className="cursor-pointer max-sm:mb-50" href="#">
+                <a
+                  className="cursor-pointer max-sm:mb-50 hover:text-primary-bright-red"
+                  href="#"
+                >
                   {link.title}
                 </a>
               </li>
@@ -69,7 +72,7 @@ const NavBar = () => {
               {NavLinks.map((link) => (
                 <li key={link.id}>
                   <a
-                    className="cursor-pointer max-sm:mb-50"
+                    className="cursor-pointer max-sm:mb-50 hover:text-primary-bright-red"
                     href="#"
                     onClick={handleClick}
                   >
