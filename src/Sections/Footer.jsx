@@ -4,6 +4,9 @@ import { FooterIcons, footerLinks1, footerLinks2 } from "../Constant";
 const date = new Date().getFullYear();
 
 const Footer = () => {
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
   return (
     <footer className="py-[5rem] px-[2.5rem] bg-primary-dark-blue max-sm:overflow-hidden">
       <div className="grid grid-cols-4 gap-5 items-center justify-center max-sm:grid-cols-1 max-sm:text-center ">
@@ -49,7 +52,7 @@ const Footer = () => {
         </div>
 
         <div className="max-sm:row-span-full ">
-          <form>
+          <form onSubmit={handleSubmit}>
             <input
               className="bg-white py-2 px-8 rounded-full outline-0"
               type="text"

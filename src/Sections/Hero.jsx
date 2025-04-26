@@ -3,7 +3,7 @@ import Button from "../Components/Button";
 const Hero = () => {
   return (
     <header className="section-padding container">
-      <div className="grid grid-cols-2 mt-[6.5rem] max-sm:flex max-sm:flex-col max-sm:justify-center ">
+      <div className="grid grid-cols-2 mt-[6.5rem]  max-sm:flex max-sm:flex-col max-sm:justify-center ">
         {/* Header content */}
         <div className="max-sm:text-center">
           <h1 className="text-7xl mb-7 font-bold text-primary-dark-blue  max-sm:text-5xl max-sm:font-bold">
@@ -19,7 +19,7 @@ const Hero = () => {
         </div>
         {/* Header img */}
         <div className="max-sm:order-first max-sm:mb-4 max-sm:max-s-auto">
-          <img src="/images/illustration-intro.svg" />
+          <img src="/images/illustration-intro.svg" className="h-auto w-full" />
         </div>
       </div>
     </header>

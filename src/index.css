@@ -2,7 +2,7 @@
 
 @layer base {
   html {
-    font-size: 16px;
+    font-size: 100%;
     line-height: 1.5;
   }
 
@@ -56,4 +56,8 @@
   /* Text-color */
   --text-primary-dark-blue: hsl(228, 39%, 23%);
   --text-secondary-very-dark-blue: hsl(233, 12%, 13%);
+
+  /* Custom breakpoints */
+
+  --breakpoint-xsm: 34.5rem;
 }

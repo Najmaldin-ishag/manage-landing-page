@@ -18,7 +18,7 @@ const NavBar = () => {
   }
   return (
     <header className="mt-[2.5rem]! section-padding container relative ">
-      <nav className="flex justify-between items-center">
+      <nav className="flex justify-between items-center max-md:flex max-md:justify-between">
         <div className="flex justify-between max-sm:flex max-sm:justify-between max-sm:min-w-full">
           <a href="/">
             <img
@@ -27,19 +27,21 @@ const NavBar = () => {
               className="logo cursor-pointer"
             />
           </a>
-          {isOpen ? (
-            <button onClick={toggleNavigation}>
-              <img src="/images/icon-close.svg" className="ml-auto" />
-            </button>
-          ) : (
-            <button onClick={toggleNavigation} className="lg:hidden ">
-              <img
-                src="/images/icon-hamburger.svg"
-                className="h-6 w-6  "
-                alt="hamburger-icon"
-              />
-            </button>
-          )}
+          <div className="max-md:hidden max-lg:hidden max-sm:block">
+            {isOpen ? (
+              <button onClick={toggleNavigation}>
+                <img src="/images/icon-close.svg" className="ml-auto" />
+              </button>
+            ) : (
+              <button onClick={toggleNavigation} className="lg:hidden ">
+                <img
+                  src="/images/icon-hamburger.svg"
+                  className="h-6 w-6  "
+                  alt="hamburger-icon"
+                />
+              </button>
+            )}
+          </div>
         </div>
 
         {/* Desktop Nav */}
