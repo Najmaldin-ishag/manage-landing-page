@@ -1,5 +1,7 @@
 # Manage Landing Page
 
+![Screenshot (5)](https://github.com/user-attachments/assets/46f1f076-3a8e-45d1-b39f-fa0fe3ec8286)
+
 A clean and modern landing page for a project management platform, built with **React** and **Tailwind CSS**.
 
 ## 🚀 Live Demo
